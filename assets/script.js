@@ -9,16 +9,24 @@ const numKM = parseInt(prompt("Quanti km vuoi percorrere?"));
 const age = parseInt(prompt("Quanti anni hai?"));
 
 let KMprice = numKM * 0.21 ;
+let finalKMprice = KMprice.toFixed(2);
+
+let prezzoMinore = KMprice - (KMprice * 20 / 100);
+let finalPriceM = prezzoMinore.toFixed(2);
+
+let prezzoOver = KMprice - (KMprice * 40 / 100);
+let finalPriceO = prezzoOver.toFixed(2);
+
 
 
 if (age > 18 && age < 65) {
     document.getElementById("price").innerHTML = KMprice
 }
 if (age < 18) {
-    document.getElementById("price").innerHTML = KMprice - (KMprice * 20 / 100);
+    document.getElementById("price").innerHTML = finalPriceM;
 }
 if (age > 65) {
-    document.getElementById("price").innerHTML = KMprice - (KMprice * 40 / 100);
+    document.getElementById("price").innerHTML = finalPriceO;
 }
 
 
