@@ -13,7 +13,7 @@ let finalKMprice = KMprice.toFixed(2);
 
 
 
-if (age > 18 && age < 65) {
+if (age >= 18 && age <= 65) {
     document.getElementById("price").innerHTML = KMprice
 }
 if (age < 18) {
