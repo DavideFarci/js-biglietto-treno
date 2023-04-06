@@ -30,7 +30,7 @@ if (age > 65) {
 }
 
 if (isNaN(numKM) || isNaN(age)) {
-    alert("ricontrolla i valori inseriti")
+    // alert("ricontrolla i valori inseriti")
     document.getElementById("price").innerHTML = "Scemo, sei scemo!"
 }
 
