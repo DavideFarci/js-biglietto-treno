@@ -29,6 +29,11 @@ if (age > 65) {
     document.getElementById("price").innerHTML = prezzoOver.toFixed(2);
 }
 
+if (isNaN(numKM) || isNaN(age)) {
+    alert("ricontrolla i valori inseriti")
+    document.getElementById("price").innerHTML = "Scemo, sei scemo!"
+}
+
 
 
 
